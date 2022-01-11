@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,700&display=swap');
+
+*,
+html,
+html::after,
+html::before
+{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    box-sizing: border-box;
+}
+
+#main
+{
+    display: grid;
+    grid-template-rows: 80px 45px 45px 1fr;
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+
+#title, #date-birth-death, #subtitle, #img-div
+{
+    justify-self: center;
+}
+
+#title
+{
+    align-self: center;
+    font-size: 45px;
+}
+
+#date-birth-death, #subtitle
+{
+    font-size: 24px;
+    align-self: center;
+}
+
+#img-div
+{
+    display: grid;
+    grid-row: 1fr 1fr 1fr;
+    grid-column: 1fr;
+    width: 70%;
+}
+#img-div #image
+{
+    width: 100%;
+    height: auto;
+    padding-bottom: 16px;
+}
+
+#img-div #img-caption
+{
+    max-width: 100%;
+}
+#img-caption p
+{
+    text-align: justify;
+}
+
+#img-div #tribute-info
+{
+    max-width: 100%;
+}
+h2{
+    font-size: 28px;
+    color: red;
+    font-style: oblique;
+}
+
+p
+{
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+#last-p
+{
+    font-size: 20px;
+}
+
+a
+{
+    text-decoration: none;
+    color: red;
+}
+
+a:hover
+{
+    color: salmon;
+}
+
+#section-oeuvres
+{
+    width: 100%;
+}
+
+ul
+{
+    padding-left: 35px;
+}
+
+footer{
+    width: 70%;
+    margin: 0 auto;
+    background-color: rgb(235, 235, 235);
+}
+
+#citation
+{
+    font-size: 28px;
+}
+
+#citation-caption
+{
+    font-size: 18px;
+}
+
+.quotes
+{
+    font-size: 34px;
+    font-weight: bolder;
+}
+
+@media (max-width: 952px)
+{
+    #main
+    {
+        grid-template-rows: 60px 35px 35px 1fr;
+    }
+
+    #title{
+        font-size: 30px;
+    }
+
+    h2
+    {
+        font-size: 20px;
+    }
+
+    #date-birth-death, #subtitle
+    {
+        font-size: 20px;
+    }
+
+    #citation
+    {
+        font-size: 20px;
+    }
+
+    #citation-caption
+    {
+        font-size: 16px;
+    }
+
+    .quotes
+    {
+        font-size: 26px;
+        font-weight: bolder;
+    }
+
+}
